@@ -5,6 +5,49 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--primary-green);
+    outline-offset: 2px;
+}
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    caret-color: transparent;
+}
+
+body {
+    cursor: default;
+}
+
+a, button, input, textarea, select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    caret-color: transparent;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, li {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    caret-color: transparent;
+    cursor: default;
+}
+
+input, textarea {
+    caret-color: var(--text-dark);
+}
+
 :root {
     --primary-green: #9dce59;
     --dark-green: #7db83d;
